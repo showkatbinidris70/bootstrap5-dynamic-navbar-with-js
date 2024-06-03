@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const linkUrl = link.getAttribute("href");
     if (
       linkUrl === currentUrl ||
-      (linkUrl === "index.html" && currentUrl === "")
+      (linkUrl === "/" && currentUrl === "")
     ) {
       link.classList.add("active");
     } else {
