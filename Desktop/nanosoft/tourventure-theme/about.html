@@ -1,0 +1,512 @@
+<!--
+    Company Name: Nanoit
+    Project Name: Digency
+    Author: Nanoit
+    Version: 1.0
+    Created: 2024-10-06
+    Description: This is a digital agency website template.
+    License: Your License Information
+-->
+
+<!-- Tourventure Responsive HTML Template -->
+
+<!DOCTYPE html>
+<html lang='zxx'>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Digital Agency - We provide the best digital solutions for your business.">
+    <meta name="keywords" content="Digincy Digital Agency, Web Design, SEO, Marketing, Creative Agency">
+    <meta name="author" content="Nanoit">
+    <title>Tourventure - Responsive HTML5 Template</title>
+    <link rel="icon" href="./images/favicon-16x16.png" type="image/x-icon">
+
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#ffffff">
+    <meta property="og:title" content="Digital Agency">
+    <meta property="og:description" content="We provide the best digital solutions for your business.">
+    <meta property="og:image" content="images/og-image.jpg">
+    <meta property="og:url" content="https://www.yourwebsite.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Digital Agency">
+    <meta name="twitter:description" content="We provide the best digital solutions for your business.">
+    <meta name="twitter:image" content="images/twitter-image.jpg">
+    <meta name="twitter:site" content="@yourtwitterhandle">
+
+    <!-- font family -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet" />
+
+    <!-- fontawesome 6.6.0-->
+    <link rel="stylesheet" href="fonts/all.min.css">
+    <link rel="stylesheet" href="fonts/fontawesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Stylesheets -->
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/responsive.css" rel="stylesheet" type="text/css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        @keyframes float {
+            0% {
+                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+                transform: translatey(0px);
+            }
+
+            50% {
+                box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+                transform: translatey(-20px);
+            }
+
+            100% {
+                box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+                transform: translatey(0px);
+            }
+        }
+
+        /* ------------------------------- */
+
+        .lightbox {
+            background-color: rgba(0, 0, 0, 0.585);
+            overflow: hidden;
+            position: fixed;
+            display: none;
+            z-index: 9999;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            justify-content: center;
+            align-items: center;
+
+            /* padding-top: 10% !important; */
+            /* padding-bottom: 5% !important; */
+        }
+
+        /* Ensure the lightbox container centers the video */
+        .lightbox-container {
+            position: relative;
+            width: 100%;
+            max-width: 820px;
+            margin: 0 auto;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+        }
+
+        /* Make iframe responsive */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin-top: 2.5rem !important;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Close Button */
+        .lightbox-close {
+            border: none;
+            background-color: transparent;
+            color: red;
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            margin-left: auto;
+            z-index: 10;
+        }
+
+        /* lightbox video end */
+    </style>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="nav-container">
+            <div class="container">
+                <div class="row">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid px-0">
+                            <a class="navbar-brand" href="/">
+                                <!-- <h3 class="fs-3">Tourventure</h3> -->
+                                <img src="images/icons/pt-2.png" class="img-fluid" alt="" srcset=""
+                                    style="height: 60px; width: 220px;">
+                            </a>
+                            <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span class="toggler-icon top-bar"></span>
+                                <span class="toggler-icon middle-bar"></span>
+                                <span class="toggler-icon bottom-bar"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNav">
+                                <ul class="navbar-nav ms-md-auto gap-2">
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link active" aria-current="page" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link" href="about.html">About Us</a>
+                                    </li>
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link" href="destination.html">Destination</a>
+                                    </li>
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link" href="packages.html">Packages</a>
+                                    </li>
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link" href="blogs.html">Blogs</a>
+                                    </li>
+                                    <li class="nav-item rounded">
+                                        <a class="nav-link" href="contact.html">Contact Us</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="breadcrumb">
+        <div class="container">
+            <div class="row ">
+                <div class="d-flex align-items-center justify-content-center w-100 h-100 ">
+                    <div class="">
+                        <h2 class="text-center text-white">About Us</h2>
+                        <h6 class="text-white text-center"><a href="/">Home</a> :: <span>About Us</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-page">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section: Images -->
+                <div class="col-lg-6">
+                    <div class="position-relative">
+                        <div class="w-100 text-center">
+                            <img src="images/about-g2.png" class="img-fluid w-75" alt="" srcset="">
+                        </div>
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
+                            <button class="play-btn d-flex justify-content-center align-items-center"
+                                onclick="revealVideo('video','youtube')" title="Play Video">
+                                <i class="fa-regular fa-circle-play" style="font-size: 60px;"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex gap-4" style="margin-top: -50px;">
+                        <div class="w-100"> <img src="images/about-g1.png" class="img-fluid w-100" alt="" srcset="">
+                        </div>
+                        <div class="w-100"> <img src="images/about-g3.png" class="img-fluid w-100" alt="" srcset="">
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-lg-6 d-flex flex-column align-items-center mb-4 mb-lg-0 d-none">
+                    <div class="position-relative mb-3">
+                        <img src="https://via.placeholder.com/500x300/ff0000/ffffff?text=Video"
+                            class="img-fluid rounded-3" alt="Main video thumbnail">
+                        <div
+                            class="position-absolute top-0 start-0 end-0 bottom-0 bg-overlay d-flex justify-content-center align-items-center">
+                            <button class="btn btn-light rounded-circle play-btn">
+                                <i class="bi bi-play-fill"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="d-flex w-100 justify-content-between gap-2">
+                        <img src="images/about-g1.png" class="img-fluid w-100 rounded-3 me-2" alt="Image 1">
+                        <img src="images/about-g3.png" class="img-fluid w-100 rounded-3" alt="Image 2">
+                    </div>
+                </div>
+
+                <!-- Right Section: Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold">
+                        About Our Company And <span class="text-danger">What We Offer</span>.
+                    </h2>
+                    <div class="d-flex my-4">
+                        <div class="text-center me-3">
+                            <div class="bg-light rounded-3 p-3 shadow-sm">
+                                <h3 class="text-danger fw-bold">10</h3>
+                                <p>Years Experience</p>
+                            </div>
+                        </div>
+                        <div class="text-center me-3">
+                            <h3 class="fw-bold">100+</h3>
+                            <p>Tour Guide</p>
+                        </div>
+                        <div class="text-center">
+                            <h3 class="fw-bold">500+</h3>
+                            <p>Traveler Connect</p>
+                        </div>
+                    </div>
+                    <p class="text-muted pt-4">
+                        Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus.
+                        Suspendissendt blandit interdum. Sed pellentesque at nunc eget consente consectetur.Duis rutrum
+                        nisl urna. Maecenas vel libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt
+                        blandit interdum. Sed pellentesque at nunc consectetur.Duis rutrum nisl urna. Maecenas vel
+                        libero faucibus nisi venenatis hendrerit a id lectus. Suspendissendt blandit interdum. Sed
+                        pellentesque at nunc consectetur.Duis rutrum nisl urna. Maecenas vel libero faucibus nisi
+                        venenatis hendrerit a id lectus. Suspendissendt blandit interdum. Sed pellentesque at nunc
+                        consectetur.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div id="video" class="lightbox" onclick="hideVideo('video','youtube')" style="z-index: 9999;">
+            <div class="d-flex justify-content-center align-items-center w-100" style="height: 100vh;">
+                <div class="lightbox-container">
+                    <div class="lightbox-content">
+                        <button onclick="hideVideo('video','youtube')" class="lightbox-close" data-toggle="lightbox">
+                            <i class="fa-solid fa-xmark fs-1 lightbox-close-icon"></i>
+                        </button>
+                    </div>
+                    <div class="lightbox-fullscreen">
+                        <div class="popup-bg"></div>
+                        <div class="video-container">
+                            <iframe id="youtube" width="560" height="315"
+                                src="https://www.youtube.com/embed/QxWctzGPkok" title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container" style="padding-top: 120px;">
+            <div class="row align-items-center">
+                <!-- Left Side: Text Content -->
+                <div class="col-lg-6">
+                    <h2 class="fw-bold mb-4">
+                        Why Package Book With <span class="text-danger">TourX Pro?</span>
+                    </h2>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">500+</h3>
+                                <h5 class="text-danger text-nowrap">Awesome Tour</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">300+</h3>
+                                <h5 class="text-danger text-nowrap">Destinations</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mb-4 border p-3 rounded">
+                        <div class="d-flex gap-3">
+                            <div class="">
+                                <h3 class="text-danger fw-bold">150+</h3>
+                                <h5 class="text-danger text-nowrap">Mountains</h5>
+                            </div>
+                            <p class="text-muted">
+                                Duis rutrum nisl urna. Maecenas vel libero faucibus nisi venenatis
+                                hendrerit a id lectus. Suspendisse interdum lacus vehicula.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side: Image Grid -->
+                <div class="col-lg-6">
+                    <img src="images/about-image-group2.png" class="img-fluid" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-cta pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="cta-text">
+                                <h4>Find us</h4>
+                                <span>1010 Avenue, sw 54321, chandigarh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="fas fa-phone"></i>
+                            <div class="cta-text">
+                                <h4>Call us</h4>
+                                <span>9876543210 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-4 mb-30">
+                        <div class="single-cta">
+                            <i class="far fa-envelope-open"></i>
+                            <div class="cta-text">
+                                <h4>Mail us</h4>
+                                <span>mail@info.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content pt-5 pb-5">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-4 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-logo" style="margin-top: -20px;">
+                                <img src="images/icons/pt-2.png" class="img-fluid" alt="" srcset=""
+                                    style="height: 60px; width: 220px;">
+                            </div>
+                            <div class="footer-text">
+                                <p>Lorem ipsum dolor sit amet, consec tetur adipisicing elit, sed do eiusmod tempor
+                                    incididuntut consec tetur adipisicing
+                                    elit,Lorem ipsum dolor sit amet.</p>
+                            </div>
+                            <div class="footer-social-icon">
+                                <span>Follow us</span>
+                                <a href="#"><i class="fab fa-facebook-f facebook-bg"></i></a>
+                                <a href="#"><i class="fab fa-twitter twitter-bg"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g google-bg"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Useful Links</h3>
+                            </div>
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="about.html">About Us</a></li>
+                                <li><a href="destination.html">Destination</a></li>
+                                <li><a href="packages.html">Packages</a></li>
+                                <li><a href="blogs.html">Blogs</a></li>
+                                <li><a href="contact.html">Contact us</a></li>
+                                <li><a href="#">Latest News</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+                        <div class="footer-widget">
+                            <div class="footer-widget-heading">
+                                <h3>Subscribe</h3>
+                            </div>
+                            <div class="footer-text mb-25">
+                                <p>Don’t miss to subscribe to our new feeds, kindly fill the form below.</p>
+                            </div>
+                            <div class="subscribe-form">
+                                <form action="#">
+                                    <input type="text" placeholder="Email Address">
+                                    <button><i class="fab fa-telegram-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+                        <div class="copyright-text">
+                            <p>Copyright &copy; 2024, All Right Reserved <a
+                                    href="https://codepen.io/anupkumar92/">Nanosoft</a></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+                        <div class="footer-menu">
+                            <ul>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="blogs.html">Blogs</a></li>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Policy</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jquery 3.6.0 (Must be loaded first) -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- bootstrap 5 main.js (Depends on jQuery) -->
+    <script src="js/bootstrap.js"></script>
+
+    <!-- slick slider js -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <!-- gsap -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+
+    <!-- gsap custom js -->
+    <!-- <script src="js/gsap.js"></script> -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- custom css -->
+    <script src="js/main.js"></script>
+
+    <script>
+
+
+
+
+    </script>
+</body>
+
+</html>
